@@ -1,0 +1,433 @@
+{
+  "validation_results": {
+    "reference_PPR": {
+      "all_1260": 0.3796097883597889,
+      "eligible_1224": 0.3888956971677565,
+      "eligible_count": 1224
+    },
+    "score_fusion_A": {
+      "all_1260": 0.3761025132275137,
+      "eligible_1224": 0.3852852668845321,
+      "eligible_count": 1224
+    },
+    "schedule_reranking_B": {
+      "all_1260": 0.38539351851851883,
+      "eligible_1224": 0.3948495370370374,
+      "eligible_count": 1224
+    },
+    "chosen": "channel_schedule_B"
+  },
+  "join_example": {
+    "user_id": "7981779138282146703",
+    "vsetv_id/channel_id": "1495",
+    "view_interval": [
+      "2020-03-09 00:40:50",
+      "2020-03-09 02:28:55"
+    ],
+    "programme_id": "12001732",
+    "programme_interval": [
+      "2020-03-09 01:16:00",
+      "2020-03-09 01:39:00"
+    ],
+    "programme_duration_seconds": 1380,
+    "overlap_seconds": 1380,
+    "watched_fraction": 1
+  },
+  "validation_profiles": [
+    {
+      "profile": "heavy_train_history",
+      "user_id": "10500740270951698446",
+      "qualified_train_airings": 904,
+      "train_distinct_programmes": 97,
+      "validation_ground_truth_top5": [
+        {
+          "id": "12001682",
+          "title": "М/с 'Губка Боб Квадратные Штаны'.",
+          "category": "Детям"
+        },
+        {
+          "id": "12002856",
+          "title": "М/с 'Элвиннн!!! и бурундуки'.",
+          "category": "Детям"
+        },
+        {
+          "id": "12001697",
+          "title": "М/с 'Аватар: Легенда об Аанге'.",
+          "category": "Детям"
+        },
+        {
+          "id": "2400480",
+          "title": "ТСН.",
+          "category": "Инфо"
+        },
+        {
+          "id": "12002355",
+          "title": "М/с 'Кунг-фу панда: Удивительные легенды'.",
+          "category": "Детям"
+        }
+      ],
+      "validation_predictions": {
+        "global_popularity": [
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          },
+          {
+            "id": "12001682",
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям"
+          },
+          {
+            "id": "20088",
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения"
+          },
+          {
+            "id": "2400508",
+            "title": "Сегодня.",
+            "category": "Инфо"
+          }
+        ],
+        "PPR_alpha_0_4": [
+          {
+            "id": "12001682",
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям"
+          },
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "12002856",
+            "title": "М/с 'Элвиннн!!! и бурундуки'.",
+            "category": "Детям"
+          },
+          {
+            "id": "12001734",
+            "title": "М/с 'Волшебные покровители'.",
+            "category": "Детям"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          }
+        ],
+        "MF_64": [
+          {
+            "id": "12001682",
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям"
+          },
+          {
+            "id": "12002856",
+            "title": "М/с 'Элвиннн!!! и бурундуки'.",
+            "category": "Детям"
+          },
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "12001734",
+            "title": "М/с 'Волшебные покровители'.",
+            "category": "Детям"
+          },
+          {
+            "id": "12001697",
+            "title": "М/с 'Аватар: Легенда об Аанге'.",
+            "category": "Детям"
+          }
+        ],
+        "final_method_validation_prediction": [
+          {
+            "id": "12001682",
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям"
+          },
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "12002856",
+            "title": "М/с 'Элвиннн!!! и бурундуки'.",
+            "category": "Детям"
+          },
+          {
+            "id": "12001734",
+            "title": "М/с 'Волшебные покровители'.",
+            "category": "Детям"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          }
+        ]
+      },
+      "final_candidate_test_top5": [
+        "12001682",
+        "2400480",
+        "12002856",
+        "12001697",
+        "12001734"
+      ],
+      "PPR_AP5_audit": {
+        "recommended_ids_in_rank_order": [
+          "12001682",
+          "2400480",
+          "12002856",
+          "12001734",
+          "240081"
+        ],
+        "relevant_ids": [
+          "2400480",
+          "12001682",
+          "12001697",
+          "12002355",
+          "12002856"
+        ],
+        "hits_and_precision_terms": [
+          {
+            "rank": 1,
+            "id": "12001682",
+            "precision_at_rank": 1
+          },
+          {
+            "rank": 2,
+            "id": "2400480",
+            "precision_at_rank": 1
+          },
+          {
+            "rank": 3,
+            "id": "12002856",
+            "precision_at_rank": 1
+          }
+        ],
+        "numerator": 3,
+        "denominator_min_5_relevant": 5,
+        "AP@5": 0.6
+      }
+    },
+    {
+      "profile": "light_train_history",
+      "user_id": "12453026253397466416",
+      "qualified_train_airings": 1,
+      "train_distinct_programmes": 1,
+      "validation_ground_truth_top5": [
+        {
+          "id": "240081",
+          "title": "Факты.",
+          "category": "Инфо"
+        },
+        {
+          "id": "2400480",
+          "title": "ТСН.",
+          "category": "Инфо"
+        },
+        {
+          "id": "5200303",
+          "title": "'Следствие вели...' с Леонидом Каневским.",
+          "category": "Познавательное"
+        },
+        {
+          "id": "20088",
+          "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+          "category": "Развлечения"
+        },
+        {
+          "id": "200337",
+          "title": "Утро с Интером.",
+          "category": "Развлечения"
+        }
+      ],
+      "validation_predictions": {
+        "global_popularity": [
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          },
+          {
+            "id": "12001682",
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям"
+          },
+          {
+            "id": "20088",
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения"
+          },
+          {
+            "id": "2400508",
+            "title": "Сегодня.",
+            "category": "Инфо"
+          }
+        ],
+        "PPR_alpha_0_4": [
+          {
+            "id": "200337",
+            "title": "Утро с Интером.",
+            "category": "Развлечения"
+          },
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          },
+          {
+            "id": "2400508",
+            "title": "Сегодня.",
+            "category": "Инфо"
+          },
+          {
+            "id": "20088",
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения"
+          }
+        ],
+        "MF_64": [
+          {
+            "id": "200337",
+            "title": "Утро с Интером.",
+            "category": "Развлечения"
+          },
+          {
+            "id": "6200371",
+            "title": "ДжеДАИ.",
+            "category": "Познавательное"
+          },
+          {
+            "id": "5200303",
+            "title": "'Следствие вели...' с Леонидом Каневским.",
+            "category": "Познавательное"
+          },
+          {
+            "id": "90051380",
+            "title": "Х/ф 'Черный дождь'.",
+            "category": "Фильмы"
+          },
+          {
+            "id": "400363",
+            "title": "От пацанки до панянки, 4 сезон, 10 эп.",
+            "category": "Развлечения"
+          }
+        ],
+        "final_method_validation_prediction": [
+          {
+            "id": "200337",
+            "title": "Утро с Интером.",
+            "category": "Развлечения"
+          },
+          {
+            "id": "2400480",
+            "title": "ТСН.",
+            "category": "Инфо"
+          },
+          {
+            "id": "240081",
+            "title": "Факты.",
+            "category": "Инфо"
+          },
+          {
+            "id": "2400508",
+            "title": "Сегодня.",
+            "category": "Инфо"
+          },
+          {
+            "id": "20088",
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения"
+          }
+        ]
+      },
+      "final_candidate_test_top5": [
+        "240081",
+        "2400480",
+        "5200303",
+        "20088",
+        "200337"
+      ],
+      "PPR_AP5_audit": {
+        "recommended_ids_in_rank_order": [
+          "200337",
+          "2400480",
+          "240081",
+          "2400508",
+          "20088"
+        ],
+        "relevant_ids": [
+          "20088",
+          "200337",
+          "240081",
+          "2400480",
+          "5200303"
+        ],
+        "hits_and_precision_terms": [
+          {
+            "rank": 1,
+            "id": "200337",
+            "precision_at_rank": 1
+          },
+          {
+            "rank": 2,
+            "id": "2400480",
+            "precision_at_rank": 1
+          },
+          {
+            "rank": 3,
+            "id": "240081",
+            "precision_at_rank": 1
+          },
+          {
+            "rank": 5,
+            "id": "20088",
+            "precision_at_rank": 0.8
+          }
+        ],
+        "numerator": 3.8,
+        "denominator_min_5_relevant": 5,
+        "AP@5": 0.76
+      }
+    }
+  ],
+  "interaction_scale": {
+    "train_users": 4737,
+    "train_user_program_pairs": 114853,
+    "train_qualified_airings": 316416,
+    "validation_users_with_ground_truth": 4643,
+    "validation_user_program_pairs": 140486,
+    "validation_qualified_airings": 295044,
+    "fixed_submission_users": 1260
+  },
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "seed": 42,
+    "mf_factors": 64,
+    "mf_iterations": 8,
+    "ppr_alpha": 0.4
+  }
+}
