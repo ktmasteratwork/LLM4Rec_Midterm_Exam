@@ -1,0 +1,16 @@
+data/raw/
+data/processed/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+session.json
+*session_export*.json
